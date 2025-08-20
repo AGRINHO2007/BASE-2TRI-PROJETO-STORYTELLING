@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "pergunta deve ser escrita aqui",
+        enunciado: "Você saiu da casa dos seus pais?",
         alternativas: [
             {
-                texto: "alternativa letra A deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra A deve estar aqui "
+                texto: "Sim, fui morar sozinho.",
+                afirmacao: "Você conquistou sua independência e aprendeu a se virar por conta própria."
             },
             {
-                texto: "alternativa letra B deve ser escrita aqui",
-                afirmacao: "Afirmação gerada se a pessoa escolher a letra B deve estar aqui "
+                texto: "Não, continuei morando com eles.",
+                afirmacao: "Você aproveitou mais tempo com a família e economizou bastante dinheiro."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Você conseguiu o seu primeiro emprego?",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Sim, comecei a trabalhar cedo.",
+                afirmacao: "Você ganhou experiência e cresceu rapidamente na carreira."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Não, preferi esperar mais um pouco.",
+                afirmacao: "Você aproveitou esse tempo para estudar e se preparar melhor."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Você decidiu fazer faculdade?",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Sim, entrei para a faculdade.",
+                afirmacao: "Você se formou e abriu várias portas profissionais."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Não, preferi trabalhar direto.",
+                afirmacao: "Você entrou cedo no mercado de trabalho e construiu sua carreira com prática."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Você começou um relacionamento sério?",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Sim, encontrei alguém especial.",
+                afirmacao: "Vocês viveram momentos incríveis juntos e construíram uma vida feliz."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Não, preferi ficar solteiro.",
+                afirmacao: "Você aproveitou sua liberdade e focou nos seus objetivos pessoais."
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Você comprou sua própria casa?",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Sim, conquistei meu lar.",
+                afirmacao: "Você teve estabilidade e um lugar para chamar de seu."
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Não, continuei alugando.",
+                afirmacao: "Você manteve flexibilidade para mudar sempre que quis."
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -106,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
-    textoResultado.textContent = historiaFinal;
+    textoResultado.textContent = historiaFinal + "\n\nHistória criada por Carlos Henrique e Victor Hugo.";
     caixaAlternativas.textContent = "";
 }
 
